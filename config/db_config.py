@@ -10,10 +10,12 @@ meta = MetaData()
 
 # Creating engine
 auth = f"{os.getenv('DATABASE_USER')}:{os.getenv('DATABASE_PASSWORD')}"
+print("auth",auth)
 db = create_engine(
     f"mysql+pymysql://{auth}@{os.getenv('DATABASE_URL')}/{os.getenv('DATABASE_NAME')}",
     pool_recycle=3600,
 )
+print("db", db)
 
 # dev url
 # db = create_engine("mysql+pymysql://root:3k2HlQOQV6z8nTEaCcRM@containers-us-west-104.railway.app:5950/railway",pool_recycle=5950,)
