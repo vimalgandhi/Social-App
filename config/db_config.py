@@ -17,7 +17,7 @@ meta = MetaData()
 # )
 
 
-# dev url
+# dev url change db credentials
 db = create_engine(f"mysql+pymysql://root:{os.getenv('DATABASE_PASSWORD_DEV')}@{os.getenv('DATABASE_URL_DEV')}:5950/railway",pool_recycle=5950,) 
 # Connecting db
 try:
