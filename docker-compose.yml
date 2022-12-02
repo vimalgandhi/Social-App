@@ -24,14 +24,5 @@ services:
     volumes:
       - .:/code
 
-  liquibase:
-    profiles: [ "liquibase" ]
-    build: ./liquibase
-    depends_on:
-      - db
-    command: --defaultsFile=/liquibase/changelog/liquibase.properties update
-    volumes:
-      - ./liquibase/changelog:/liquibase/changelog
-
 volumes:
   database-data: null # named volumes can be managed easier using docker-compose  

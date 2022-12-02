@@ -1,7 +1,7 @@
 # Importing libraries
 from helper.api_helper import APIHelper
 from config.db_config import db
-from helper.hashing import Hash
+from helper.hashing import Hashing
 from helper.token_helper import TokenHelper
 from helper.api_helper import APIHelper
 from models.user_table import user_table

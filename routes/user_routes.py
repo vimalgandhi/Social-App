@@ -10,5 +10,3 @@ user = APIRouter(tags=['user'] , prefix="/api")
 @user.post('/check_username')
 def check_username(request: check_user):
     return UserController.check_username(request)
-
-

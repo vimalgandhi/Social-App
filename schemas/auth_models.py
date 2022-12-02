@@ -13,3 +13,14 @@ class RegistrationRequest(BaseModel):
     username : str
     _email = validator("email", allow_reuse=True)(ValidationHelper.is_email)
     _password = validator("password", allow_reuse=True)(ValidationHelper.is_valid_password)
+
+class ForgotPasswordModel(BaseModel):
+    email: str
+    # _email = validator("email", allow_reuse=True)(ValidationHelper.is_email)
+
+class ResetPassword(BaseModel):
+    email: str
+    password: str
+    token: str
+    _email = validator("email", allow_reuse=True)(ValidationHelper.is_email)
+    _password = validator("password", allow_reuse=True)(ValidationHelper.is_valid_password)

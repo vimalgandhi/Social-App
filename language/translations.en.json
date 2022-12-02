@@ -6,6 +6,9 @@
     "INVALID_EMAIL" : "Please enter valid email.",
     "INVALID_PASSWORD": "The password must be at least six characters long",
     "ALREDY_USERNAME" : "UserName alredy exised",
-    "AVAILABLE_USERNAME": "Available Username"
+    "AVAILABLE_USERNAME": "Available Username",
+    "USER_NOT_FOUND" : "User not Found",
+    "TOKEN_NOT_AVAIABLE" : "Invalid token , Please try again.",
+    "PASSWORD_SUCCESS": "Password reset successfully"
   }
 }
